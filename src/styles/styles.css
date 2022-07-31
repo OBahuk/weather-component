@@ -1,0 +1,75 @@
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% {  transform: rotate(359deg); }
+}
+
+.weather-component {
+    padding: 1.5em;
+    width: 400px;
+}
+
+.weather-component .weather-content {
+    display: flex;
+    padding-bottom: 1em;
+}
+
+.weather-component h2 {
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.weather-component svg {
+    animation: spin 2s linear infinite;
+}
+
+.weather-component .city-name {
+    white-space: nowrap;
+}
+
+.weather-icon svg {
+    width: 150px;
+    height: auto;
+}
+
+.weather-component .temperature {
+    font-size: 2em;
+}
+
+.other-conditions p {
+    margin-right: 1em;
+    display: inline-block;
+}
+
+figure {
+    margin: 5px;
+}
+
+.weather-component.dark-theme {
+     color: white;
+     background-color: #5a5aea;
+ }
+
+.weather-component .light-theme {
+     color: #5e55a4;
+     background-color: white;
+}
+
+.weather-component form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-component button, .weather-component input {
+    font-size: 14px;
+    line-height: 2em;
+    padding: 0 10px;
+    border-radius: 1em;
+    background: white;
+    color: #5a5aea;
+}
+
+.dark-theme button, .dark-theme input {
+    background: #5a5aea;
+    color: white;
+}
